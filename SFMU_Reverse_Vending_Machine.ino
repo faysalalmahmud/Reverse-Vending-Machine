@@ -4,7 +4,7 @@
 #include <Servo.h>
 #include <qrcode.h>
 
-//For Display
+//Set pin For Display 
   #define TFT_CS        9 
   #define TFT_RST        8 // Or set to -1 and connect to Arduino RESET pin
   #define TFT_DC         10
@@ -12,7 +12,7 @@
 // For 1.44" and 1.8" TFT with ST7735 use:
 // Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 // Adafruit_ST7735 tft = Adafruit_ST7735(A5,A3,A2,A1,A4);
-Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC,11, 13, TFT_RST);
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC,11, 13, TFT_RST);   //This one is slower but workable
 
 //Create object for servo motor
 Servo myservo;
@@ -459,6 +459,8 @@ void printDevInformation(){
   tft.println("Kazi Masruzzaman");
 }
 
+
+//start screen animation
 void printRVM(){
   tft.fillScreen(ST77XX_WHITE);
   tft.setCursor(15, 50);
@@ -473,6 +475,8 @@ void printRVM(){
   tft.println("Machine");
 }
 
+
+//show team name function
 void printTeamName(){
   tft.fillScreen(ST77XX_BLACK);
   tft.setCursor(30, 60);
@@ -484,6 +488,9 @@ void printTeamName(){
   tft.println("TEAM MUSKETEER");
 }
 
+
+
+//instruction display on screen
 void displayInstruction1(){
   tft.fillScreen(ST77XX_WHITE);
   tft.setCursor(25, 20);
@@ -499,6 +506,8 @@ void displayInstruction1(){
   tft.println("3.To finish Press 'BLUE' button");
 }
 
+
+//second type instruction showing function
 void displayInstruction2(){
   tft.fillScreen(ST77XX_WHITE);
   tft.setCursor(25, 20);
