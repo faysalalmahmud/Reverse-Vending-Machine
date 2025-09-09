@@ -1,4 +1,4 @@
-## SFMU Reverse Vending Machine
+## Reverse Vending Machine
 
 This Arduino project rewards users for recycling plastic and metal bottles with QR codes for redemption. Users capture a picture of the QR code on their phone for later redemption. The machine features a 1.8-inch TFT display, three buttons for user interaction, a servo motor for opening the appropriate recycling hole, and a bottle counting mechanism.
 
@@ -20,7 +20,7 @@ This Arduino project rewards users for recycling plastic and metal bottles with 
 
 1. Install Arduino IDE.
 2. Clone/download this repo.
-3. Open `SFMU_Reverse_Vending_Machine.ino` in Arduino IDE.
+3. Open `Reverse_Vending_Machine.ino` in Arduino IDE.
 4. Connect your Arduino and upload the code.
 
 **Usage:**
